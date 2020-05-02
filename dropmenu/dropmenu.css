@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+
+}
+.menutren {
+    width: 100%;
+    height: 54px;
+    background: gray;
+    position: relative;
+}
+
+.menu {
+    width: 10%;
+    height: 54px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.menu:hover .menucon {
+    visibility: visible;
+}
+h3:hover {
+    color: #fff;
+   
+   
+}
+.menucon {
+    position: absolute;
+    width: 100%;
+    background: red;
+    top: 100%;
+    border-top: 0.03px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    cursor: pointer;
+}

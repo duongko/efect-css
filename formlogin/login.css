@@ -1,0 +1,56 @@
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height:550px;
+    background-color: #f5f5f5;
+
+}
+.input-group {
+    background: white;
+    box-shadow: 2px 3px 4px -1px grey;
+    width: 300px;
+    height: 384px;
+    border-radius: 9px;
+    position: relative;
+}
+
+h2 {
+    margin: 42px 61px;
+    user-select: none;
+}
+
+.username, .password, .button {
+    height: 69px;
+    margin-left: 23px;
+}
+
+input[type="text"], .password input {
+    width: 227px;
+    height: 31px;
+    border: none;
+    border-bottom: 2px solid #008b8b94;
+    outline: none;
+}
+
+.button button {
+    width: 234px;
+    height: 40px;
+    border-radius: 19px;
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    outline: none;
+    margin-left: -5px;
+    /* pointer-events: none;không có hiệu ứng kick chuột */
+    user-select: none;/*không tác đọng được thẻ này*/
+    cursor: pointer;
+}
+.sign-up {
+    margin-left: 44px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color: gray;
+    
+}
+.sign-up span{
+    user-select: none;
+}

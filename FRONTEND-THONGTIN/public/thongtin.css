@@ -1,0 +1,45 @@
+.toanbo {
+    text-align: center;
+    /* margin-top: 4px; */
+}
+
+.vaicaianh {
+    width: 100px;
+    display: inline-flex;
+}
+
+.vaicaianh img {
+    width: 104px;
+    margin-right: 3px;
+}
+
+.khoi1 {
+    width: 254px;
+    overflow: hidden;
+    text-align: -webkit-left;
+    margin-left: 40%;
+}
+
+
+
+img.anhembe {
+    width: 116px;
+}
+
+.khoi1 h3.mauchu {
+    font-family: cursive;
+    font-size: 22px;
+    cursor: grab;
+}
+
+.khoi1 h3:hover {
+    color: darkturquoise;
+}
+
+.noidung1 p {
+    font-family: none;
+    color: darkolivegreen;
+}
+.khoi1 h3{
+    cursor: grab;
+}

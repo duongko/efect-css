@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="modal-box.css">
+    <script src="jquery.3.4.3.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+      <div class="manphu"></div>
+        <h3 class="tieude">làm Modal Box</h3>
+        <div class="noidung">
+            <h4 class="nut">click me</h4>
+        </div>
+        <div class="box">
+            <h4 class="head">I am Duongko</h4>
+            <div class="ndbox">duong thật là đẹp trai .duong handsome</div>
+            <h3 class="close">close</h3>
+        </div>
+   
+   
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".nut,.manphu").click(function(){
+            // $(".box").animate({opacity:1})
+             $(".box").addClass("hien");
+             $(".manphu").addClass("phu")
+
+        })
+        $(".close,.manphu").click(function(){
+            $(".box").removeClass("hien");
+            $(".manphu").removeClass("phu")
+        })
+    })
+    
+    </script>
+</body>
+</html>

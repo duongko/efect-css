@@ -1,0 +1,45 @@
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height:550px;
+
+}
+.switch{
+    width: 100px;
+    height: 50px;
+    background-color: darkgray;
+    -webkit-appearance: none;
+    border-radius: 48px;
+    border: 1px solid darkgray;
+    outline: none;
+    position: relative;
+    transition: 0.3s;
+}
+.switch:hover{
+    cursor: pointer;
+}
+input.switch:checked {
+    background: green;
+    border: 1 solid green;
+    border: 1px solid green;
+    transition: 0.3s;
+}
+
+input.switch:before {
+    content: ' ';
+    height: 50px;
+    width: 50px;
+    background: gainsboro;
+    position: absolute;
+    border-radius: 50%;
+    left: -2px;
+    top: -2px;
+    border: 1px solid gray;
+    transition: 0.3s;
+}
+
+input.switch:checked:before {
+    left: 48px;
+    transition: 0.3s;
+}

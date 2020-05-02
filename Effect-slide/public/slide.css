@@ -1,0 +1,89 @@
+.slide{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+   
+}
+.hinhanh1{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top:0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.nuttrai,.nutphai{
+    position: absolute;
+    font-size: 30px;
+    background:black;
+    color: #fff;
+    cursor: pointer;
+}
+.nutphai{
+    right: 20px;
+}
+.hinhanh1.active{
+    opacity: 1;
+    visibility: visible;
+}
+.hinhanh1.active.sangtrai{
+    animation: sangtrai 0.4s forwards;
+}
+@-webkit-keyframes sangtrai{
+    0%{
+        transform: translateX(0%);
+        opacity: 1 ;
+        visibility:visible;
+    }
+    100%{
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility:hidden;
+    }
+}
+.hinhanh1.phaivao{
+    animation: phaivao 0.4s forwards;
+}
+@-webkit-keyframes phaivao{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+        visibility:hidden;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1 ;
+        visibility:visible;
+    }
+}
+.hinhanh1.active.sangphai{
+    animation: sangphai 0.4s forwards;
+}
+@-webkit-keyframes sangphai{
+    0%{
+        transform: translateX(0%);
+        opacity: 1 ;
+        visibility:visible;
+    }
+    100%{
+        transform: translateX(100%);
+        opacity: 0;
+        visibility:hidden;
+    }
+}
+.hinhanh1.traivao{
+    animation: traivao 0.4s forwards;
+}
+@-webkit-keyframes traivao{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility:hidden;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1 ;
+        visibility:visible;
+    }
+}

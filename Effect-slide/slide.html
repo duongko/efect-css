@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/slide.css">
+    <script src="./public/jquery.3.4.3.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slide">
+        <div class="hinhanh">
+            <img class="hinhanh1 active" src="public/img/anhnen2.jpg" />
+            <img class="hinhanh1" src="public/img/anhnen1.jpg" />
+            <img class="hinhanh1" src="public/img/anh2.jpg" />
+        </div>
+        <div class="nuttrai">trai</div>
+        <div class="nutphai">phai</div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".nutphai").click(function () {
+                var sau = $(".active").next()
+                if (sau.length == 0) {
+                    $(".active").addClass("sangtrai").one("webkitAnimationEnd", function () {
+                        $(".sangtrai").removeClass("sangtrai");
+                    })
+                    $(".hinhanh1:first-child").addClass("phaivao").one("webkitAnimationEnd", function () {
+                        $(".active").removeClass("active");
+                        $(".phaivao").addClass("active").removeClass("phaivao");
+                    })
+                } else {
+                    $(".active").addClass("sangtrai").one("webkitAnimationEnd", function () {
+                        $(".active").removeClass("sangtrai");
+                    })
+                    sau.addClass("phaivao").one("webkitAnimationEnd", function () {
+                        $(".active").removeClass("active");
+                        //   sau.removeClass("phaivao").addClass("active");
+                        $(".phaivao").addClass("active").removeClass("phaivao")
+                    })
+                }
+            })
+            $(".nuttrai").click(function () {
+                var truoc = $(".active").prev();
+                if (truoc.length == 1) {
+                    $(".active").addClass("sangphai").one("webkitAnimationEnd", function () {
+                        $(".sangphai").removeClass("sangphai");
+                    })
+                    truoc.addClass("traivao").one("webkitAnimationEnd", function () {
+                        $(".active").removeClass("active");
+                        //   sau.removeClass("phaivao").addClass("active");
+                        $(".traivao").addClass("active").removeClass("traivao")
+                    })
+                } else {
+                    $(".active").addClass("sangphai").one("webkitAnimationEnd", function () {
+                        $(".sangphai").removeClass("sangphai");
+                    })
+                    $(".hinhanh1:last-child").addClass("traivao").one("webkitAnimationEnd", function () {
+                        $(".active").removeClass("active");
+                        //   sau.removeClass("phaivao").addClass("active");
+                        $(".traivao").addClass("active").removeClass("traivao")
+                    })
+
+                }
+            })
+        })
+
+
+
+    </script>
+</body>
+
+</html>

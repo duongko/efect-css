@@ -1,0 +1,86 @@
+.manhinh{
+    width:300px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.manhinh img {
+    width:100%;
+    height: 100%;
+    position:absolute;
+    z-index: 1;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.manhinh:hover img{
+    transform: scale(1);
+}
+.xam{
+    background: #11111183;
+    position: absolute;
+    width:300px;
+    height: 250px;
+    z-index: 1;
+
+}
+.manhinh:hover .xam{
+    opacity: 0.4;
+}
+.thanh1,.thanh2{
+    position: absolute;
+    width:75%;
+    height: 2px;
+    top:49%;
+    left: 9%;
+    z-index: 5;
+    background: rgba(240, 248, 255, 0.753);
+    transition: 0.3s;
+    transform:rotate(odeg) ;
+    z-index: 5;
+    
+}
+.manhinh:hover .thanh1{
+
+transform:rotate(45deg) ;
+height: 1px;
+transition-delay: 0.2s;
+}
+.manhinh:hover .thanh2{
+
+    transform:rotate(-45deg) ;
+    height: 1px;
+    transition-delay: 0.2s;
+    }
+.chuto {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 27px;
+    top: 32%;
+    left: 31%;
+    z-index: 4;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+ .manhinh:hover .chuto{
+    transform: scale(1);
+} 
+
+.chunho {
+    position: absolute;
+    color: #222121dc;
+    text-align: center;
+    width: 57%;
+    top: 55%;
+    left: 18%;
+    transition: 0.3s;
+transform: scale(1.1);
+    z-index: 4;
+    font-size: 17px;
+ 
+   
+}
+ .manhinh:hover .chunho{
+    
+    
+    transform: scale(1);
+}
